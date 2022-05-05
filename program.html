@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body class="programs__page">
+	<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="css/style.min.css" />
+   <title>Каталог</title>
+</head>
+
+		<header class="header">
+		<div class="header__container _container">
+
+			<div class="header__logo logo">
+				<a href="./index.html">
+					<img src="img/logo.svg" alt="logo">
+				</a>
+			</div>
+
+			<nav class="header__nav nav">
+				<ul class="nav__list">
+					<li class="nav__link"><a href="./index.html">главная</a></li>
+					<li class="nav__link"><a href="./catalog.html">Каталог продукции</a></li>
+					<li class="nav__link"><a href="./program.html">подбор программы</a></li>
+				</ul>
+			</nav>
+
+
+
+			<!-- NavBtn -->
+			<button class="nav-btn">
+				<span class="nav-btn-icon"></span>
+			</button>
+			<!-- MobNav -->
+			<div class="mobile-nav">
+				<div class="header__logo logo">
+					<a href="./index.html">
+						<img src="img/logo.svg" alt="logo">
+					</a>
+				</div>
+				<div class="mobile-nav__item">
+					<ul>
+						<li><a href="./index.html" class="js-scroll">главная</a></li>
+						<li><a href="./catalog.html" class="js-scroll">Каталог продукции</a></li>
+						<li><a href="./program.html" class="js-scroll">подбор программы</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- //MobNav -->
+
+
+
+		</div>
+
+	</header>
+	<main>
+		<form class="programs__form program-form">
+			<section class="program-form__questionary questionary">
+				<div class="questionary__container _container">
+					<h3 class="program__title">Подбор программы</h3>
+					<h5 class="program__subtitle">Заполните анкету, и мы подберем
+						программу питания для вашего кота</h5>
+					<div class="programs__row">
+						<fieldset class="questionary__box questionary-box">
+							<label for="pet-name" class="pet-name">
+								<span>ИМЯ:*</span>
+								<input class="pet-input" type="text" required id="pet-name" placeholder="барсик">
+							</label>
+							<label for="pet-weight" class="pet-weight">
+								<span>Вес (кг):*</span>
+								<input class="pet-input" type="text" required id="pet-weight" placeholder="7">
+							</label>
+							<label for="pet-age" class="pet-age">
+								<span>Возраст (лет):</span>
+								<input class="pet-input" type="text" required id="pet-age" placeholder="7">
+							</label>
+						</fieldset>
+						<fieldset class="questionary-radio__box">
+							<label class="questionary-radio">похудение
+								<input type="radio" checked="checked" name="radio">
+								<span class="checkmark"></span>
+							</label>
+							<label class="questionary-radio">Набор массы
+								<input type="radio" name="radio">
+								<span class="checkmark"></span>
+							</label>
+							<label class="questionary-radio"> Не знаю (Нужен ваш совет)
+								<input type="radio" name="radio">
+								<span class="checkmark"></span>
+							</label>
+						</fieldset>
+					</div>
+				</div>
+			</section>
+
+
+			<section class="program-form__contacts contact-details">
+				<div class=" contact-details__container _container">
+					<h3 class="contact-details__title title-line">Контактные данные (владельца кота)</h3>
+
+
+					<div class="programs__row">
+						<label for="email" class="email">
+							<span>E-mail:*</span>
+							<input class="email__input" type="email" id="email" required placeholder="kuklachev@gmail.com">
+							<img src="img/icon_email.svg" alt="email ico">
+						</label>
+						<label for="email" class="phone">
+							<span>Телефон:*</span>
+							<input class="tel" type="tel" id="tel" required placeholder="+380 (96) 900-60-90">
+							<img src="img/phone 1.svg" alt="email ico">
+						</label>
+					</div>
+				</div>
+			</section>
+
+			<section class="comment">
+				<div class="comment__container _container">
+					<h3 class="comment__title">Комментарий</h3>
+					<textarea class="comment__textarea" name="comment" id="comment">Расскажите обо всех повадках кота
+
+					</textarea>
+				</div>
+			</section>
+
+
+
+			<section class="addition">
+				<div class="addition__container _container">
+					<h3 class="addition__title">Дополнительно</h3>
+					<div class="programs__row">
+						<label class="checkbox__custom">сахарозаменитель
+							<input type="checkbox" checked="checked">
+							<span class="checkbox-mark"></span>
+						</label>
+						<label class="checkbox__custom">питьевая вода
+							<input type="checkbox">
+							<span class="checkbox-mark"></span>
+						</label>
+						<label class="checkbox__custom">молоко
+							<input type="checkbox">
+							<span class="checkbox-mark"></span>
+						</label>
+						<label class="checkbox__custom">витамины
+							<input type="checkbox">
+							<span class="checkbox-mark"></span>
+						</label>
+					</div>
+					<div class="programs__row">
+						<button class="addition__btn btn-green">отправить заявку</button>
+						<span>* — Обязательные поля</span>
+					</div>
+				</div>
+			</section>
+
+		</form>
+
+	</main>
+	<footer class="footer">
+	<div class="footer__location ">
+	</div>
+	<div class="location__card card-location">
+		<div class="card-location__box">
+			<p class="card-location__title">
+				приглашаем
+				к сотрудничеству
+				дилеров!</p>
+		</div>
+		<div class="card-location__box">
+			<a class="card-location__address" href="#">ул. Большая
+				Конюшенная,&nbsp;д.&nbsp;19/8</a>
+			<p class="card-location__city">Санкт-Петербург</p>
+		</div>
+	</div>
+	<div class="footer__container _container">
+
+		<div class="location"> </div>
+
+
+		<div class="footer__info">
+
+			<a class="footer__logo logo" href="./index.html"><img src="img/footer-logo.svg" alt="logo"></a>
+
+			<div class=" footer__links">
+				<a href="#!" class="footer__link">
+					<img src="img/icon_vkontakte.svg" alt="vk.com">
+				</a>
+				<a href="#!" class="footer__link">
+					<img src="img/icon_instagram.svg" alt="instagram.com">
+				</a>
+				<a href="#!" class="footer__link">
+					<img src="img/icon_facebook.svg" alt="facebook.com">
+				</a>
+			</div>
+
+			<div class="footer__company-logo">
+				<span>HTML Academy</span>
+				<img src="img/logo_html.svg" alt="logo company">
+			</div>
+
+		</div>
+	</div>
+</footer>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
